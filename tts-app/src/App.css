@@ -1,0 +1,143 @@
+/* src/App.css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligne en haut */
+  min-height: 100vh;
+  padding: 2rem 0; /* Ajoute de l'espace en haut/bas */
+  margin: 0;
+}
+
+.App {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px; /* Un peu plus large pour les options */
+  box-sizing: border-box;
+}
+
+.App h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* Conteneur du formulaire */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espace entre les éléments */
+}
+
+/* Labels pour les champs */
+label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  display: block;
+  color: #555;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* Grille pour les options voice/lang */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+  gap: 1rem;
+}
+
+/* Style pour les inputs texte (voice, lang) */
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Style pour le slider */
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem; /* Espace avant le bouton */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+/* --- Section Résultat --- */
+
+.audio-result {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+.audio-result h3 {
+  margin-top: 0;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.audio-result a {
+  display: block;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.audio-result a:hover {
+  text-decoration: underline;
+}
+
+/* --- Message d'erreur --- */
+.error-message {
+  background-color: #fbebee; /* Rouge très clair */
+  color: #c0392b; /* Rouge foncé */
+  border: 1px solid #e74c3c;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
